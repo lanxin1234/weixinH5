@@ -5,7 +5,6 @@ import 'lib-flexible'
 
 Vue.config.productionTip = false
 
-// eslint-disable-next-line
 new Vue({
   el: '#app',
   router,
@@ -13,5 +12,4 @@ new Vue({
     App
   },
   template: '<App/>'
-  // eslint-disable-next-line
 })

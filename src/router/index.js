@@ -12,5 +12,4 @@ export default new Router({
     name: 'login',
     component: login
   }]
-  // eslint-disable-next-line
 })
