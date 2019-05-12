@@ -1,8 +1,61 @@
-.login {
-  width: 100%;
+@font-face {
+  font-family: kati;
+  src: url("../../assets/fonts/kati.ttf");
+}
 
-  h2 {
-    font-size: 20px;
+.login {
+  width: inherit;
+  height: inherit;
+  background-size: contain;
+  @include center;
+
+  .loginWrapper {
+    width: 60%;
+    padding: 40px 20px;
+    text-align: center;
+    // border: 1px solid $borderColor;
+    @include center;
+  }
+
+  h1 {
+    margin: 0 0 50px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    font-family: kati;
+  }
+
+  p.passWrodFail {
+    margin: 10px;
     color: red;
+  }
+
+  input.passWordBox {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto 30px;
+    text-align: center;
+    border: 1px solid $borderColor;
+    border-radius: 25px;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid $borderColor;
+    border-radius: 25px;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
